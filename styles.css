@@ -9,3 +9,8 @@ body {
 .box {
     height: 100%;
 }
+
+.is-custom-width {
+    width: 80px;
+    margin: 5px;
+}
