@@ -11,8 +11,8 @@ body {
 }
 
 .is-custom-width {
-    width: 80px;
-    margin: 5px 0;
+    width: 100px;
+    margin: 0 0 20px 0;
 }
 
 #keypad {
