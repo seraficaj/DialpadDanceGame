@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bulma.css" />
   <link rel="stylesheet" href="bulmaswatch.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -20,10 +21,9 @@
       <div class="buttons">
         <p class="button is-warning">High Score:</p>
         <p class="button is-light">Your Score:</p>
-        <a class="button is-danger">
+        <a class="button is-success">
           <strong>New Game</strong>
         </a>
-        <a class="button is-success"> Reset </a>
       </div>
     </div>
   </nav>
@@ -33,75 +33,78 @@
     <div class="columns">
       <div class="column is-half">
         <h2 class="title is-2 has-text-centered">Memorize!</h2>
-        <input class="input is-large" type="text" value="Memorize!" />
+        <div class="field is-grouped">
+          <p class="control"> <input class="input is-large" type="text" value="Memorize!" /></p>
+         <p><button id="submit" class="button is-medium is-success">submit</button></p>
+        </div>
       </div>
       <div class="column is-half">
         <h2 class="title is-2 has-text-centered">Keypad</h2>
         <div class="columns is-mobile">
           <div class="column is-one-quarter has-text-centered">
             <div>
-              <button id="keyOne" class="button is-large is-primary is-custom-width">
+              <button id="key-1" class="button is-large is-primary is-custom-width">
                 1
               </button>
             </div>
             <div>
-              <button id="keyFour" class="button is-large is-primary is-custom-width">
+              <button id="key-4" class="button is-large is-primary is-custom-width">
                 4 ghi
               </button>
             </div>
             <div>
-              <button id="keySeven" class="button is-large is-primary is-custom-width">
+              <button id="key-7" class="button is-large is-primary is-custom-width">
                 7 pqrs
               </button>
             </div>
           </div>
           <div class="column is-one-quarter has-text-centered">
             <div>
-              <button id="keyTwo" class="button is-large is-primary is-custom-width">
+              <button id="key-2" class="button is-large is-primary is-custom-width">
                 2 abc
               </button>
             </div>
             <div>
-              <button id="keyFive" class="button is-large is-primary is-custom-width">
+              <button id="key-5" class="button is-large is-primary is-custom-width">
                 5 jkl
               </button>
             </div>
             <div>
-              <button id="keyEight" class="button is-large is-primary is-custom-width">
+              <button id="key-8" class="button is-large is-primary is-custom-width">
                 8 tuv
               </button>
             </div>
           </div>
           <div class="column is-one-quarter has-text-centered">
             <div>
-              <button id="keyThree" class="button is-large is-primary is-custom-width">
+              <button id="key-3" class="button is-large is-primary is-custom-width">
                 3 def
               </button>
             </div>
             <div>
-              <button id="keySix" class="button is-large is-primary is-custom-width">
+              <button id="key-6" class="button is-large is-primary is-custom-width">
                 6 mno
               </button>
             </div>
             <div>
-              <button id="keyNine" class="button is-large is-primary is-custom-width">
+              <button id="key-9" class="button is-large is-primary is-custom-width">
                 9 wxyz
               </button>
             </div>
           </div>
           <div class="column is-one-quarter has-text-centered">
             <div>
-              <button id="keyStar" class="button is-large is-primary is-custom-width">
+              <button id="key-10" class="button is-large is-primary is-custom-width">
                 *
               </button>
             </div>
             <div>
-              <button id="keyZero" class="button is-large is-primary is-custom-width">
+              <button id="key-11" class="button is-large is-primary is-custom-width">
                 0
               </button>
             </div>
             <div>
-              <button id="keyPound" class="button is-large is-primary is-custom-width">
+              <button id="key-12" class="button is-large is-primary is-custom-width">
                 #
               </button>
             </div>
