@@ -1,40 +1,63 @@
 console.log('app.js running!')
 /*----- constants -----*/
-const sequences = {
+/*----- app's state (variables) -----*/
+const state = {
+  counter: 0,
+  hiScore: 0,
   playerSequence: [],
   computerSequence: []
 }
-/*----- app's state (variables) -----*/
-let counter = 0;
 /*----- cached element references -----*/
+const dialpad = document.querySelectorAll(".is-custom-width");
 
+const newGame = document.querySelector("#newGame");
+const submitButton = document.querySelector("#submitButton"); 
 
 /*----- event listeners -----*/
 
 
 /*----- functions -----*/
 
-function init() {
-  for (let i = 1; i < 13; i++) {
-    document.querySelector(`#key-${i}`).addEventListener('click', () => {
-      console.log(`key-${i} clicked!`)
-    });
-  }
+const init = () => {
 
-  document.querySelector("#submit").addEventListener('click', () => {
+  state.counter = 0;
+  state.playerSequence = [];
+  state.computerSequence = [];
+
+  dialpad.forEach((keypad, idx) => {
+    keypad.addEventListener("click", handleKeypadClick)
+  })
+
+  newGame.addEventListener('click', () => {
+    init();
+  })
+
+  submitButton.addEventListener('click', () => {
     console.log('Submit!')
   })
+
+  render();
 }
 
-function render() {
+const render = () => {
+  generateSequence();
+
+  if (state.computerSequence.length === state.playerSequence.length) {
+    compareSequences();
+  }
 }
 
-function handleClick(){
-
+const handleKeypadClick = (e) => {
+  console.log(e.target.id)
 }
 
-function generateSequence(){
-
+const generateSequence = () =>{
+  let randomNum = Math.floor(Math.random() * 12) + 1;
+  state.computerSequence.push(randomNum);
 } 
+
+const compareSequences = () => {
+  
+}
 
 init();
