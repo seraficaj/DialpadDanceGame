@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link rel="stylesheet" href="bulma.css" />
   <link rel="stylesheet" href="bulmaswatch.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -12,15 +16,14 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
-  <title>Document</title>
+  <title>Dialpad Dance Game</title>
 </head>
 
 <body>
   <nav class="navbar is-primary">
     <div class="navbar-item">
       <div class="buttons">
-        <p class="button is-warning">High Score:</p>
-        <p class="button is-light">Your Score:</p>
+        <p id="scoreDisplay" class="button is-light">Your Score:</p>
         <a id="newGame" class="button is-success">
           <strong>New Game</strong>
         </a>
@@ -29,75 +32,75 @@
   </nav>
 
   <div class="container">
-    <h1 class="title is-1 has-text-centered">Dial Dance Game</h1>
+    <h1 class="title is-1 has-text-centered">Dialpad Dance Game</h1>
     <div class="columns is-centered">
       <div class="column is-half is-centered">
         <h2 class="title is-2 has-text-centered">Repeat the button order back!</h2>
         <div class="columns is-mobile">
           <div class="column is-one-quarter has-text-centered">
             <div>
-              <button id="key-1" class="button is-large is-primary is-custom-width">
+              <button id="key1" class="button is-large is-primary is-custom-width">
                 1
               </button>
             </div>
             <div>
-              <button id="key-4" class="button is-large is-primary is-custom-width">
+              <button id="key4" class="button is-large is-primary is-custom-width">
                 4 ghi
               </button>
             </div>
             <div>
-              <button id="key-7" class="button is-large is-primary is-custom-width">
+              <button id="key7" class="button is-large is-primary is-custom-width">
                 7 pqrs
               </button>
             </div>
           </div>
           <div class="column is-one-quarter has-text-centered">
             <div>
-              <button id="key-2" class="button is-large is-primary is-custom-width">
+              <button id="key2" class="button is-large is-primary is-custom-width">
                 2 abc
               </button>
             </div>
             <div>
-              <button id="key-5" class="button is-large is-primary is-custom-width">
+              <button id="key5" class="button is-large is-primary is-custom-width">
                 5 jkl
               </button>
             </div>
             <div>
-              <button id="key-8" class="button is-large is-primary is-custom-width">
+              <button id="key8" class="button is-large is-primary is-custom-width">
                 8 tuv
               </button>
             </div>
           </div>
           <div class="column is-one-quarter has-text-centered">
             <div>
-              <button id="key-3" class="button is-large is-primary is-custom-width">
+              <button id="key3" class="button is-large is-primary is-custom-width">
                 3 def
               </button>
             </div>
             <div>
-              <button id="key-6" class="button is-large is-primary is-custom-width">
+              <button id="key6" class="button is-large is-primary is-custom-width">
                 6 mno
               </button>
             </div>
             <div>
-              <button id="key-9" class="button is-large is-primary is-custom-width">
+              <button id="key9" class="button is-large is-primary is-custom-width">
                 9 wxyz
               </button>
             </div>
           </div>
           <div class="column is-one-quarter has-text-centered">
             <div>
-              <button id="key-10" class="button is-large is-primary is-custom-width">
+              <button id="key10" class="button is-large is-primary is-custom-width">
                 *
               </button>
             </div>
             <div>
-              <button id="key-11" class="button is-large is-primary is-custom-width">
+              <button id="key11" class="button is-large is-primary is-custom-width">
                 0
               </button>
             </div>
             <div>
-              <button id="key-12" class="button is-large is-primary is-custom-width">
+              <button id="key12" class="button is-large is-primary is-custom-width">
                 #
               </button>
             </div>
