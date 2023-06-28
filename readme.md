@@ -14,7 +14,7 @@ Play the game online here at: https://seraficaj.github.io/DialpadDanceGame/, or 
 - CSS
   - [Bulma CSS](https://bulma.io/) 
   - [BulmaSwatch](https://jenil.github.io/bulmaswatch/) Lumen theme
-  - [Animate.css]([https://animate.style/) for animations
+  - [Animate.css](https://animate.style/) for animations
 - JavaScript
 
 ## Next Steps:
